@@ -9,8 +9,8 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2019-06-08T23:03:58+0300",
-    comments = "version: 1.3.0.Final, compiler: Eclipse JDT (IDE) 3.17.0.v20190306-2240, environment: Java 12.0.1 (Oracle Corporation)"
+    date = "2019-06-09T22:33:22+0300",
+    comments = "version: 1.3.0.Final, compiler: javac, environment: Java 12.0.1 (Oracle Corporation)"
 )
 public class TerminEntityAndTerminDTOMapperImpl implements TerminEntityAndTerminDTOMapper {
 
@@ -25,9 +25,9 @@ public class TerminEntityAndTerminDTOMapperImpl implements TerminEntityAndTermin
         termin.setTitel( terminDTO.getTitel() );
         termin.setStart( terminDTO.getStart() );
         termin.setEnd( terminDTO.getEnd() );
-        ArrayList<Benutzer> arrayList = terminDTO.getBenutzerList();
-        if ( arrayList != null ) {
-            termin.setBenutzerList( new ArrayList<Benutzer>( arrayList ) );
+        List<Benutzer> list = terminDTO.getBenutzerList();
+        if ( list != null ) {
+            termin.setBenutzerList( new ArrayList<Benutzer>( list ) );
         }
 
         return termin;
@@ -44,9 +44,9 @@ public class TerminEntityAndTerminDTOMapperImpl implements TerminEntityAndTermin
         terminDTO.setTitel( termin.getTitel() );
         terminDTO.setStart( termin.getStart() );
         terminDTO.setEnd( termin.getEnd() );
-        ArrayList<Benutzer> arrayList = termin.getBenutzerList();
-        if ( arrayList != null ) {
-            terminDTO.setBenutzerList( new ArrayList<Benutzer>( arrayList ) );
+        List<Benutzer> list = termin.getBenutzerList();
+        if ( list != null ) {
+            terminDTO.setBenutzerList( new ArrayList<Benutzer>( list ) );
         }
 
         return terminDTO;

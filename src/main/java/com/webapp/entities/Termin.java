@@ -3,6 +3,7 @@ package com.webapp.entities;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -39,13 +40,13 @@ public class Termin implements Serializable {
 	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinColumn(name = "benutzer_id")
 	@Column(name = "benutzer")
-	private ArrayList<Benutzer> benutzerList;
+	private List<Benutzer> benutzerList;
 
 	public Termin() {
 		this.benutzerList = new ArrayList<>();
 	};
 
-	public Termin(String titel, Date start, Date end, ArrayList<Benutzer> benutzerList) {
+	public Termin(String titel, Date start, Date end, List<Benutzer> benutzerList) {
 
 		this.titel = titel;
 		this.start = start;
@@ -77,7 +78,7 @@ public class Termin implements Serializable {
 		this.end = end;
 	}
 
-	public ArrayList<Benutzer> getBenutzerList() {
+	public List<Benutzer> getBenutzerList() {
 		return benutzerList;
 	}
 

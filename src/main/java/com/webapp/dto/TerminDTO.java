@@ -2,6 +2,7 @@ package com.webapp.dto;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import com.webapp.entities.Benutzer;
 
@@ -10,7 +11,7 @@ public class TerminDTO {
 	private String titel;
 	private Date start;
 	private Date end;
-	private ArrayList<Benutzer> benutzerList;
+	private List<Benutzer> benutzerList;
 
 	public String getTitel() {
 		return titel;
@@ -36,7 +37,7 @@ public class TerminDTO {
 		this.end = end;
 	}
 
-	public ArrayList<Benutzer> getBenutzerList() {
+	public List<Benutzer> getBenutzerList() {
 		return benutzerList;
 	}
 
