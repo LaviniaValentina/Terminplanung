@@ -8,8 +8,8 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2019-06-09T22:33:22+0300",
-    comments = "version: 1.3.0.Final, compiler: javac, environment: Java 12.0.1 (Oracle Corporation)"
+    date = "2019-06-25T17:12:16+0300",
+    comments = "version: 1.3.0.Final, compiler: Eclipse JDT (IDE) 3.17.0.v20190306-2240, environment: Java 1.8.0_191 (Oracle Corporation)"
 )
 public class BenutzerEntityAndBenutzerDTOMapperImpl implements BenutzerEntityAndBenutzerDTOMapper {
 
@@ -21,8 +21,8 @@ public class BenutzerEntityAndBenutzerDTOMapperImpl implements BenutzerEntityAnd
 
         Benutzer benutzer = new Benutzer();
 
-        benutzer.setName( benutzerDTO.getName() );
         benutzer.setEmail( benutzerDTO.getEmail() );
+        benutzer.setName( benutzerDTO.getName() );
 
         return benutzer;
     }
@@ -35,8 +35,8 @@ public class BenutzerEntityAndBenutzerDTOMapperImpl implements BenutzerEntityAnd
 
         BenutzerDTO benutzerDTO = new BenutzerDTO();
 
-        benutzerDTO.setName( benutzer.getName() );
         benutzerDTO.setEmail( benutzer.getEmail() );
+        benutzerDTO.setName( benutzer.getName() );
 
         return benutzerDTO;
     }

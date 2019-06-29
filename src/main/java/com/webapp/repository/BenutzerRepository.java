@@ -8,4 +8,6 @@ import com.webapp.entities.Benutzer;
 @Repository
 public interface BenutzerRepository extends CrudRepository<Benutzer, Integer>{
 	
+	 Benutzer findByEmail(String email);
+	 
 }

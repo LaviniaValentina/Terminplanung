@@ -9,8 +9,8 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2019-06-09T22:33:22+0300",
-    comments = "version: 1.3.0.Final, compiler: javac, environment: Java 12.0.1 (Oracle Corporation)"
+    date = "2019-06-21T00:32:20+0300",
+    comments = "version: 1.3.0.Final, compiler: Eclipse JDT (IDE) 3.17.0.v20190306-2240, environment: Java 1.8.0_191 (Oracle Corporation)"
 )
 public class TerminEntityAndTerminDTOMapperImpl implements TerminEntityAndTerminDTOMapper {
 
